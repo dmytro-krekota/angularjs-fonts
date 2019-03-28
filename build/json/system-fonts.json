@@ -1,0 +1,25 @@
+[{
+  "kind": "system",
+  "family": "Arial"
+}, {
+  "kind": "system",
+  "family": "Courier New"
+}, {
+  "kind": "system",
+  "family": "Georgia"
+}, {
+  "kind": "system",
+  "family": "Helvetica"
+}, {
+  "kind": "system",
+  "family": "Tahoma"
+}, {
+  "kind": "system",
+  "family": "Times New Roman"
+}, {
+  "kind": "system",
+  "family": "Trebuchet MS"
+}, {
+  "kind": "system",
+  "family": "Verdana"
+}]

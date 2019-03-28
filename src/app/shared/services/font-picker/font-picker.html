@@ -1,0 +1,16 @@
+<md-dialog aria-label="Select fonts">
+  <md-dialog-content>
+    <md-subheader>System fonts</md-subheader>
+    <div class="font-cards">
+      <font-card ng-repeat="font in $ctrl.systemFonts track by font.family" font="font" show-selected="true"></font-card>
+    </div>
+    <md-subheader>Select Goggle fonts</md-subheader>
+    <div class="font-cards">
+      <font-card ng-repeat="font in $ctrl.googleFonts track by font.family" font="font" show-selected="true"></font-card>
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button class="md-raised md-primary" ng-click="$ctrl.ok()">OK</md-button>
+    <md-button class="md-primary" ng-click="$ctrl.cancel()">Cancel</md-button>
+  </md-dialog-actions>
+</md-dialog>

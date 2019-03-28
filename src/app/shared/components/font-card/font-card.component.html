@@ -1,0 +1,13 @@
+<md-card class="font-cards__item">
+  <md-card-header class="padding-0">
+    <md-card-title class="font-cards__item-title">{{$ctrl.font.family}}</md-card-title>
+    <md-button class="md-icon-button margin-0" aria-label="Preview" ng-click="$ctrl.preview()">
+      <md-icon class="material-icons md-light md-48">visibility</md-icon>
+    </md-button>
+  </md-card-header>
+  <md-card-actions class="text-align-center">
+    <md-switch ng-model="$ctrl.font.isSelected" ng-if="$ctrl.showSelected" aria-label="Selected switch">
+      {{ $ctrl.font.isSelected ? 'Enabled' : 'Disabled' }}
+    </md-switch>
+  </md-card-actions>
+</md-card>

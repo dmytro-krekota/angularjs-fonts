@@ -1,0 +1,61 @@
+{
+  "name": "angularjs-fonts",
+  "scripts": {
+    "build": "rimraf build && webpack --bail --progress --profile --mode production",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress --mode development",
+    "start": "npm run server"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.0",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "@babel/runtime": "7.4.2",
+    "ajv": "6.10.0",
+    "angular": "1.7.8",
+    "angular-animate": "1.7.8",
+    "angular-aria": "1.7.8",
+    "angular-material": "1.1.14",
+    "autoprefixer": "9.5.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-angularjs-annotate": "0.10.0",
+    "copy-webpack-plugin": "5.0.2",
+    "css-loader": "2.1.1",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "file-loader": "3.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "jasmine-core": "3.3.0",
+    "node-libs-browser": "2.2.0",
+    "null-loader": "0.1.1",
+    "postcss-loader": "3.0.0",
+    "raw-loader": "2.0.0",
+    "rimraf": "2.6.3",
+    "style-loader": "0.23.1",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.2.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions",
+              "IE 11"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-class-properties",
+      "angularjs-annotate"
+    ]
+  }
+}

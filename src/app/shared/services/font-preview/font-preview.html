@@ -1,0 +1,11 @@
+<md-dialog aria-label="Font preview">
+  <md-dialog-content>
+    <md-subheader>Preview for the font "{{::$ctrl.font.family}}"</md-subheader>
+    <div contenteditable="true" class="font-preview__text" ng-class="{'visibility-hidden':!$ctrl.styleLoaded}" ng-style="::{'font-family': $ctrl.font.family}">
+      This text can be edited.
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button class="md-primary" ng-click="$ctrl.cancel()">Close</md-button>
+  </md-dialog-actions>
+</md-dialog>
